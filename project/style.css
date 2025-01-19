@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #f6d365, #fda085);
+  margin: 0;
+  padding: 20px;
+}
+
+/* Calendar Styles */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.day {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.day.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.day.sunday {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.day.saturday {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Task & Routine Styles */
+.task-section {
+  margin-top: 30px;
+}
+
+.task-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff9c4;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.task-box.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.note-box {
+  padding: 20px;
+  margin: 10px 0;
+  background: #ffff88;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-add-task {
+  margin-top: 10px;
+}
+
+.calendar-btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
